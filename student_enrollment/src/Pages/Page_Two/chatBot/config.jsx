@@ -1,9 +1,10 @@
 // in config.js
 import { createChatBotMessage } from 'react-chatbot-kit';
+import BotAvatar from '../components/BotAvatar'
 const botName = 'Chat-Bot';
 
 const config = {
-  initialMessages: [createChatBotMessage(`Hi! I'm ${botName}`)],
+  initialMessages: [createChatBotMessage(`Hello, Welcome to student info system! `)],
    widgets: [
     // {
     //   widgetName: 'dogPicture',
@@ -11,8 +12,11 @@ const config = {
     // },
   ],
   customComponents: {
-    header: () => <div style={{ backgroundColor: 'red', padding: "5px", borderRadius: "3px" }}>This is the header</div>,
+    header: () => null,
+    input: () => null,
+    botAvatar: (props) => <BotAvatar {...props} />,
   },
+
   botName: botName,
   customStyles: {
     botMessageBox: {

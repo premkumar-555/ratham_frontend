@@ -1,0 +1,26 @@
+.react-chatbot-kit-chat-input {
+    display: none;
+}
+
+.react-chatbot-kit-chat-btn-send {
+    display: none;
+}
+
+.react-chatbot-kit-chat-message-container::-webkit-scrollbar {
+    width: 0.1em;
+}
+
+.react-chatbot-kit-chat-message-container {
+    padding: 0 1rem;
+}
+
+.react-chatbot-kit-chat-bot-message-container {
+    margin: 00;
+    justify-content: flex-start
+}
+
+.react-chatbot-kit-chat-bot-message {
+    margin-left: 2px;
+    width: 100%;
+    padding: 5px 10px;
+}
