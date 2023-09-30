@@ -1,8 +1,4 @@
-import Chatbot from 'react-chatbot-kit'
-import 'react-chatbot-kit/build/main.css'
-import config from './chatBot/config';
-import MessageParser from './chatBot/MessageParser';
-import ActionProvider from './chatBot/ActionProvider';
+
 import { Routes, Route } from "react-router-dom"
 import PageOne from './Pages/Page_One/PageOne'
 import PageTwo from './Pages/Page_Two/PageTwo'
@@ -20,13 +16,6 @@ function App() {
         <Route path="page_three" element={ <PageThree/> } />
       </Routes>
     </div>
-       {/* <div>
-      <Chatbot
-        config={config}
-        messageParser={MessageParser}
-        actionProvider={ActionProvider}
-      />
-    </div> */}
     </>
   )
 }
