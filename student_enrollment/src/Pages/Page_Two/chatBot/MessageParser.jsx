@@ -2,11 +2,9 @@ import React from 'react';
 
 const MessageParser = ({ children, actions }) => {
     const parse = (message) => {
-    if (message.includes('hello')) {
-      actions.handleHello();
-    }
-     if (message.includes('dog')) {
-      actions.handleDog();
+      console.log(message)
+    if (message.includes('Got')) {
+      alert('Hi')
     }
   };
 

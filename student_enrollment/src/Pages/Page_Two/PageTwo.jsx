@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Chatbot from 'react-chatbot-kit'
 import 'react-chatbot-kit/build/main.css'
 import config from './chatBot/config';
@@ -12,6 +12,7 @@ const PageTwo = () => {
         config={config}
         messageParser={MessageParser}
         actionProvider={ActionProvider}
+        disableScrollToBottom
       />
     </div>
   )

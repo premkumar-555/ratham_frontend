@@ -1,19 +1,14 @@
 import React from 'react';
-
+import {
+  createClientMessage 
+} from 'react-chatbot-kit';
 const ActionProvider = ({ createChatBotMessage, setState, children }) => {
-     const handleHello = () => {
-    const botMessage = createChatBotMessage('Hello. Nice to meet you.');
+     const handleGotit = () => {
+    const message  = createClientMessage('Got It!');
+    const botMessage = createChatBotMessage('Pick a slot', {widget: 'gotItBtn', delay: 1000});
     setState((prev) => ({
       ...prev,
-      messages: [...prev.messages, botMessage],
-    }));
-  };
-   const handleDog = () => {
-    const botMessage = createChatBotMessage( "Here's a nice dog picture for you!", 
-    { widget: 'dogPicture'});
-    setState((prev) => ({
-      ...prev,
-      messages: [...prev.messages, botMessage],
+      messages: [...prev.messages, message, botMessage],
     }));
   };
 
@@ -21,8 +16,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
     <div>
       {React.Children.map(children, (child) => {
         return React.cloneElement(child, {
-          actions: {handleHello,
-        handleDog},
+          actions: {handleGotit},
         });
       })}
     </div>
