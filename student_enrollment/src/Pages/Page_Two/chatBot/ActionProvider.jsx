@@ -5,10 +5,17 @@ import {
 const ActionProvider = ({ createChatBotMessage, setState, children }) => {
      const handleGotit = () => {
     const message  = createClientMessage('Got It!');
-    const botMessage = createChatBotMessage('Pick a slot', {widget: 'gotItBtn', delay: 1000});
+    const botMessage = createChatBotMessage('Pick a slot', {widget: 'dateStrip', delay: 500});
     setState((prev) => ({
       ...prev,
       messages: [...prev.messages, message, botMessage],
+    }));
+  };
+  const handleDateSelect = () => {
+    const botMessage = createChatBotMessage('Pick a slot', {widget: 'TimeStrip', delay: 500});
+    setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, botMessage],
     }));
   };
 

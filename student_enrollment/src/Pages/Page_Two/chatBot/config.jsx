@@ -2,6 +2,8 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
 import BotAvatar from '../components/BotAvatar'
 import GotItBtn from '../components/GotItBtn'
+import DateStrip from '../components/DateStrip'
+import TimeStrip from '../components/TimeStrip'
 const botName = 'Chat-Bot';
 
 const config = {
@@ -15,9 +17,13 @@ const config = {
       widgetFunc: (props) => <GotItBtn {...props} />,
     },
     {
-      widgetName: 'gotItBtn',
-      widgetFunc: (props) => <GotItBtn {...props} />,
-    }
+      widgetName: 'dateStrip',
+      widgetFunc: (props) => <DateStrip {...props} />,
+    },
+    {
+      widgetName: 'TimeStrip',
+      widgetFunc: (props) => <DateStrip {...props} />,
+    },
   ],
   customComponents: {
     header: () => null,
