@@ -11,7 +11,7 @@ const GotItBtn = (props) => {
         props.actions.handleGotit();
         setTimeout(() => {
             setshowBtn(false)
-        }, 500);
+        }, 1000);
 
 }
 return (

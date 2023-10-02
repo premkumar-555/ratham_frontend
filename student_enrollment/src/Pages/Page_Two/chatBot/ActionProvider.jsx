@@ -11,13 +11,6 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
       messages: [...prev.messages, message, botMessage],
     }));
   };
-  const handleDateSelect = () => {
-    const botMessage = createChatBotMessage('Pick a slot', {widget: 'TimeStrip', delay: 500});
-    setState((prev) => ({
-      ...prev,
-      messages: [...prev.messages, botMessage],
-    }));
-  };
 
   const handleName = (slot) => {
     const message  = createClientMessage(slot);
