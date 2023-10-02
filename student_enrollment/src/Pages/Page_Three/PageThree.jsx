@@ -15,7 +15,7 @@ const PageThree = () => {
      </Box>
      <Box mt="10" px={3} display='flex' justifyContent='center' alignItems='center' >
       <Link to="/">
-     <Button  fontSize='14px' fontWeight='semibold' size='sm' alignItem='center' colorScheme='red'>Exit Now!</Button>
+     <Button  fontSize='14px' fontWeight='semibold' size='sm'  colorScheme='red'>Exit Now!</Button>
       </Link>
      </Box>
     </Box>

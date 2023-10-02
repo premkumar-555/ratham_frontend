@@ -16,7 +16,7 @@ const GotItBtn = (props) => {
 }
 return (
     <Box mb="5px" display='flex' justifyContent='flex-end'>
-    { showBtn && <Button onClick={() => {executeGotIt()}}  fontSize='14px' fontWeight='semibold' size='sm' alignItem='center' colorScheme='whatsapp'>Got It!</Button>
+    { showBtn && <Button onClick={() => {executeGotIt()}}  fontSize='14px' fontWeight='semibold' size='sm' colorScheme='whatsapp'>Got It!</Button>
     }
     </Box>
   )
