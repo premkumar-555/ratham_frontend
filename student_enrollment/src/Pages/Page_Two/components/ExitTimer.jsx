@@ -9,6 +9,7 @@ useEffect(() => {
   timerRef.current = setInterval(() => {
     setTimer((pre) => {
         if(pre === 1){
+          setTimer(0)
             clearInterval(timerRef.current);    
             navigate('/page_three')
         }else{

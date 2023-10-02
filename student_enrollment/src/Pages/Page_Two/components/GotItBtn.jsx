@@ -12,7 +12,7 @@ const GotItBtn = (props) => {
         setTimeout(() => {
             setshowBtn(false)
         }, 500);
-        console.log(props)
+
 }
 return (
     <Box mb="5px" display='flex' justifyContent='flex-end'>
