@@ -33,7 +33,7 @@ const DateStrip = (props) => {
   return (
     <>
     {showStrips && (<>
-    <div class="date-container">
+    <div className="date-container">
         <IconButton size='xs'
   variant='outline'
   bg='#E0E0E0'
@@ -42,7 +42,7 @@ const DateStrip = (props) => {
   icon={<MdKeyboardArrowLeft size="md"/>}
   isRound={true}
 />
-        <div class="date-slots">
+        <div className="date-slots">
             {dates.length === 3 && dates.map((ele, ind) => (
                 <Box onClick={() => {setselectedDate(ele?.date);
                   dispatch(updateDate(`${ele?.date}, ${ele?.day}`))
