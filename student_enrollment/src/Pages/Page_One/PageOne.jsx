@@ -9,7 +9,7 @@ const PageOne = () => {
      </Box>
      <Box mt="10" px={3} display='flex' justifyContent='center' alignItems='center' >
       <Link to="page_two">
-     <Button  fontSize='14px' fontWeight='semibold' size='sm' alignItem='center' colorScheme='whatsapp'>Enroll Now!</Button>
+     <Button  fontSize='14px' fontWeight='semibold' size='sm'  colorScheme='whatsapp'>Enroll Now!</Button>
       </Link>
      </Box>
     </Box>

@@ -21,7 +21,6 @@ const PageTwo = () => {
         actionProvider={ActionProvider}
          saveMessages={saveMessages}
          messageHistory={loadMessages()}
-        disableScrollToBottom
       />
     </div>
   )

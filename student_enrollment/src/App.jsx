@@ -18,8 +18,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={ <PageOne/> } />
-        <Route path="page_two" element={ <PageTwo/> } />
-        <Route path="page_three" element={ <PageThree/> } />
+        <Route path="/page_two" element={ <PageTwo/> } />
+        <Route path="/page_three" element={ <PageThree/> } />
       </Routes>
       </Box>
 
